@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Bantuan</title>
+  <link rel="icon" href="/img/cuaca.png">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #e8f1fb; /* biru muda lembut */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* posisi horizontal di tengah */
+      align-items: flex-start; /* posisi dari atas */
+      min-height: 100vh;
+    }
+
+    .main-content {
+      width: 90%;
+      max-width: 900px;
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      margin-top: 50px; /* jarak dari atas */
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e5aa8; /* biru utama */
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .faq {
+      background-color: #f4f8ff;
+      border-left: 5px solid #4a90e2;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq:hover {
+      background-color: #e7f0ff;
+      transform: translateY(-2px);
+    }
+
+    .faq h3 {
+      color: #2e6ec7;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .faq p {
+      margin: 0;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    img {
+      display: block;
+      margin: 25px auto;
+      max-width: 80%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px solid #d6e2f3;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        align-items: flex-start;
+        padding-top: 30px;
+      }
+
+      .main-content {
+        width: 95%;
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .faq h3 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-content">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+
+    <div class="faq">
+      <h3>a. Halaman ini digunakan untuk apa?</h3>
+      <p>
+        Halaman Bantuan ini berisi informasi dan panduan singkat tentang aplikasi <strong>Cek Cuaca</strong>. 
+        Di sini pengguna bisa memahami fungsi aplikasi serta teknologi yang digunakan di baliknya.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>b. Apa itu API?</h3>
+      <p>
+        API (<em>Application Programming Interface</em>) adalah penghubung antara satu aplikasi dengan aplikasi lain. 
+        Dengan API, aplikasi cuaca bisa mengambil data dari sumber eksternal tanpa harus mengelola data cuaca secara langsung.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>c. API apa yang digunakan dalam aplikasi ini?</h3>
+      <p>
+        Aplikasi ini menggunakan <strong>OpenWeatherMap API</strong> untuk menampilkan informasi cuaca terkini berdasarkan lokasi pengguna, 
+        seperti suhu, kelembapan, kecepatan angin, dan kondisi langit.
+      </p>
+    </div>
+
+    <div class="faq">
+      <h3>d. Pola arsitektur API yang digunakan</h3>
+      <p>
+        Salah satu pola arsitektur API yang dikenal adalah <strong>SOAP (Simple Object Access Protocol)</strong>.  
+        SOAP merupakan protokol berbasis <em>XML</em> yang digunakan untuk bertukar data antar sistem melalui jaringan, biasanya menggunakan protokol <strong>HTTP</strong> atau <strong>SMTP</strong>.
+      </p>
+
+      <p>
+        SOAP memiliki struktur pesan yang sangat terstandar dan aman karena mendukung fitur seperti <strong>WS-Security</strong> (keamanan pesan) dan <strong>ACID transactions</strong>.  
+        Namun, dibanding RESTful, SOAP lebih kompleks dan membutuhkan format XML yang ketat.
+      </p>
+
+      <p>
+        Berikut ilustrasi sederhana bagaimana SOAP bekerja dalam proses pertukaran data:
+      </p>
+      <img src="/img/soap.png" alt="Diagram SOAP API">
+    </div>
+
+    <footer>
+      {{>footer}}
+    </footer>
+  </div>
+
+</body>
+</html>

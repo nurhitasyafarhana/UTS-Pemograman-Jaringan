@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{judul}}</title>
+  <link rel="icon" href="/img/cuaca.png">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #e8f1fb; color: #333; margin: 0; padding: 0; display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; }
+    .main-content { width: 90%; max-width: 900px; background-color: #fff; padding: 50px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.1); margin-top: 60px; margin-bottom: 50px; }
+    h1 { text-align: center; color: #1e5aa8; font-size: 28px; margin-bottom: 40px; }
+    .news { background-color: #f4f8ff; border-left: 5px solid #4a90e2; border-radius: 8px; padding: 20px; margin-bottom: 25px; transition: 0.3s ease; }
+    .news:hover { background-color: #e7f0ff; transform: translateY(-2px); }
+    .news h3 { color: #2e6ec7; font-size: 18px; margin-bottom: 10px; }
+    .news p { margin: 0; line-height: 1.6; text-align: justify; }
+    img { display: block; margin: 15px auto; max-width: 100%; border-radius: 10px; }
+  </style>
+</head>
+<body>
+  <div class="main-content">
+    <h1>{{judul}}</h1>
+
+    {{#if error}}
+      <p style="color:red; text-align:center;">{{error}}</p>
+    {{/if}}
+
+    {{#each berita}}
+      <div class="news">
+        <h3><a href="{{this.url}}" target="_blank">{{this.title}}</a></h3>
+        <p>{{this.description}}</p>
+        {{#if this.image}}
+          <img src="{{this.image}}" alt="Gambar berita">
+        {{/if}}
+        <p><small>Sumber: {{this.source}} | {{formatDate this.published_at}}</small></p>
+      </div>
+    {{/each}}
+
+    <footer style="text-align:center; margin-top:30px;">
+      Dikembangkan oleh Nurhitasyafarhana
+    </footer>
+  </div>
+</body>
+</html>

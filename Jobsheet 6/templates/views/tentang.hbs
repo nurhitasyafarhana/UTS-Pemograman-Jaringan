@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Nurhitasyafarhana</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            display: flex;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Kolom kiri */
+        .left-column {
+            width: 35%;
+            background-color: #f2f3f4;
+            padding: 30px 25px;
+            text-align: center;
+        }
+
+        /* Foto full body */
+        .profile-photo {
+            width: 80%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 3px solid #2c3e50;
+            margin: 0 auto 20px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .left-column h2 {
+            font-size: 1.4em;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .left-column h4 {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            font-size: 1em;
+            margin-top: 30px;
+            margin-bottom: 8px;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            display: inline-block;
+        }
+
+        .contact p,
+        .education p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .skills ul {
+            list-style: square;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        /* Kolom kanan */
+        .right-column {
+            width: 65%;
+            padding: 40px;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .role {
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile p {
+            text-align: justify;
+            font-size: 0.95em;
+            line-height: 1.7;
+        }
+
+        .experience,
+        .projects {
+            margin-bottom: 30px;
+        }
+
+        .experience h3,
+        .projects h3 {
+            font-size: 1.1em;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .job {
+            margin-top: 15px;
+        }
+
+        .job h4 {
+            font-size: 1em;
+            margin: 5px 0;
+            color: #000;
+        }
+
+        .job span {
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .job ul {
+            list-style: disc;
+            padding-left: 20px;
+            font-size: 0.9em;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+
+            .left-column,
+            .right-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <!-- Kolom Kiri -->
+        <div class="left-column">
+            <img src="/img/foto.jpg" alt="Foto Profil" class="profile-photo">
+            <h2>Nurhitasyafarhana</h2>
+            <h4>Informatika</h4>
+
+            <div class="contact">
+                <div class="section-title">KONTAK</div>
+                <p>📞 +62 852-7481-4870</p>
+                <p>✉️ farhana6536@gmail.com</p>
+                <p>📍 Jalan Garuda 1</p>
+            </div>
+
+            <div class="education">
+                <div class="section-title">PENDIDIKAN</div>
+                <p>Sekolah Rendah Islam Intergrasi Al-Iman (2009 - 2014)</p>
+                <p>Sekolah Menengan Agama Arab (2015 - 2016)</p>
+                <p>MTsN 1 Solok Selatan (2018 - 2020)</p>
+                <p>SMAN 1 Solok Selatan (2020 - 2023)</p>
+                <p>Universitas Negeri Padang (2023 - Sekarang)</p>
+            </div>
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="right-column">
+            <div class="name">Nurhitasyafarhana</div>
+            <div class="role">MAHASISWA INFORMATIKA</div>
+
+            <div class="profile">
+                <div class="section-title">PROFIL</div>
+                <p>
+                    Saya adalah mahasiswa Informatika Universitas Negeri Padang angkatan 2023 yang memiliki minat dalam bidang desain antarmuka dan pengembangan aplikasi. 
+                    Berfokus pada pembuatan pengalaman pengguna (UI/UX) yang menarik serta efisien. 
+                    Terbiasa bekerja dengan alat desain seperti Figma dan memahami dasar pemrograman web.
+                </p>
+            </div>
+
+            <div class="experience">
+                <h3>PENGALAMAN</h3>
+                <div class="job">
+                    <h4>Desainer UI/UX – Proyek Aplikasi “MoodMusic” <span>(2024)</span></h4>
+                    <ul>
+                        <li>Mendesain antarmuka aplikasi menggunakan Figma dengan konsep user-friendly.</li>
+                        <li>Membuat wireframe, prototipe interaktif, dan panduan warna aplikasi.</li>
+                        <li>Berkolaborasi dengan tim developer untuk implementasi desain.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="projects">
+                <h3>PROYEK</h3>
+                <ul>
+                    <li>Pengembangan Website Ecommerce – 2024</li>
+                    <li>Desain UI Aplikasi “MoodMusic” – 2025</li>
+                    <li>Cisco Networking Academy: Introduction to Networks – 2025</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <div class="section-title">KEMAMPUAN</div>
+                <ul>
+                    <li>Desain UI/UX (Figma)</li>
+                    <li>Pengembangan Web Dasar (HTML, CSS, JS)</li>
+                    <li>Manajemen Proyek dan Kolaborasi</li>
+                    <li>Penggunaan Git dan GitHub</li>
+                    <li>Analisis Kebutuhan Pengguna</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
